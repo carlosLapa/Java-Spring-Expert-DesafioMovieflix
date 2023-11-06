@@ -25,7 +25,8 @@ public class AuthService {
 			return userRepository.findByEmail(username);
 		}
 		catch (Exception e) {
-			throw new UsernameNotFoundException("Invalid user");
+			throw new UsernameNotFoundException("User inválido");
 		}
 	}
+
 }
