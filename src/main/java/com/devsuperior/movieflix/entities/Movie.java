@@ -3,6 +3,7 @@ package com.devsuperior.movieflix.entities;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -39,7 +40,6 @@ public class Movie {
     private List<Review> reviews = new ArrayList<>();
 
     public Movie(){
-
     }
 
     public Movie(Long id, String title, String subTitle, Integer year, String imgUrl, String synopsis, Genre genre) {
